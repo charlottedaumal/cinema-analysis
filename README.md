@@ -167,7 +167,7 @@ Now that we have identified methods for analyzing event impact, we will be able 
   </tr>
 </table>
 
->**Note**: every team member participated actively in many data processing and analysis. We distributed the tasks evenly among ourselves.
+> 📝 **Note**: Every team member participated actively in many data processing and analysis. We distributed the tasks evenly among ourselves.
 
 ---
 
