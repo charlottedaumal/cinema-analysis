@@ -1,6 +1,12 @@
 # From Protests to Pixels: The Global Film Industry's Reflections on the Biggest Movements and Events of the Last Century
+ 
+**Context:** This project was completed as part of the *Applied Data Analysis* course taught by Prof. Robert West at EPFL  
+**Language:** Python   
+**Date:** December 2023 
 
-## Abstract 💡
+---
+
+## 💡 Abstract
 
 The last century witnessed key social and political events that transformed many facets of human society, ranging from World War I, to Female Emancipation, to the Opioid Crisis.  Cinema being a way to depict real-life (as many other forms of art), can reflect all those core societal events and movements.
 
@@ -25,8 +31,9 @@ The following events were analysed:
 - LGBTQ emancipation
 - Terrorism
 
+---
 
-## Research Questions 🔍
+## 🔍 Research Questions
 
 To determine the most impactful events/movements of the last century, we define the importance of an event/movement through movies' characteristics analysis. To drive our reflexion, we formulated several main research questions:
 
@@ -38,8 +45,9 @@ To determine the most impactful events/movements of the last century, we define 
 - Can we observe a significant difference in the average ```popularity``` of movies belonging to certain events? Higher popularity of movies indicates a bigger impact of the event in the society.
 - Is there a significant difference between positive and negative emotional impact of movies depending on events? Can we analyse the emotional impacts by evaluating written movie reviews by ```sentiment analysis```?
 
+---
 
-## Additional Datasets 📈
+## 📈 Additional Datasets
 
 To answer our research questions, we propose these two additional datasets:
 
@@ -47,8 +55,9 @@ To answer our research questions, we propose these two additional datasets:
 
 - ```imdb_movies.csv```: This dataset includes metadata for 45 000 movies from the *Full Movie Lens Dataset* obtained from  [Kaggle](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset), which contains additinal interesting indicators such as vote-counts, popularity and additional movies revenues. We merged it with our current dataset by querying [Wikidata](https://query.wikidata.org) for Freebase_id translations.
 
+---
 
-## Methods 📚
+## 📚 Methods
 
 ### Step 1: Data Loading and Preprocessing
 
@@ -66,23 +75,25 @@ To investigate the influence of historical events and movements in movies, we li
 
 In this section, we tried to answer the different research questions.
 
-#### Number of Movies per Event Over the Years
+#### a) Number of Movies per Event Over the Years
 
 We plotted the annual movie count for each event, providing insights into event popularity and serving as an additional test for our dictionary-based event classification. We also performed an ```ANOVA test``` to detect significant differences in mean percentages across years per event.
 
-#### Number of Countries producing Movies about given Events
+#### b) Number of Countries producing Movies about given Events
 
 To assess the impact of a particular event, specifically the number of countries producing movies about it, we analyzed variations and magnitudes between events by calculating the ```coefficient of variation``` and ```standard deviation```.
 
-#### Box Office Revenue, Rating, Rating Counts and Popularity
+#### c) Box Office Revenue, Rating, Rating Counts and Popularity
 
 To measure audience attendance and the impact of movies based on the events they represent, we decided to use ```95% confidence``` interval plots. This allows us to compare average rating scores, counts, popularity, and box office performance for movies associated with various events.
 
-#### Review Sentiment Analysis
+#### d) Review Sentiment Analysis
 
 We conducted sentiment analysis using imported word lists for [positive](https://ptrckprry.com/course/ssd/data/positive-words.txt) and [negative](https://ptrckprry.com/course/ssd/data/negative-words.txt) emotions. We had two options for analyzing reviews: utilizing the complete review (```Review Detail```) or the filtered keywords from reviews (```Review Summary```), and we chose the latter due to its higher variance in positive and negative emotion ratios, assessed through a ```PCA```. 
 
-## Steps for the Future 💫 
+---
+
+## 💫 Steps for the Future
 
 Now that we have identified methods for analyzing event impact, we will be able to proceed with the analysis.
 
@@ -94,8 +105,9 @@ Now that we have identified methods for analyzing event impact, we will be able 
 
 - It could be interesting to perform clustering on our dataset using our impact indicators as prediction features. This could then be compared to the dictionary-based event-matching method.
 
+---
 
-## Proposed Timeline ⏳
+## ⏳ Proposed Timeline
 
 ```
 .
@@ -124,8 +136,9 @@ Now that we have identified methods for analyzing event impact, we will be able 
 
 ```
 
+---
 
-## About our Team 👥
+## 👥 About our Team
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
@@ -155,3 +168,10 @@ Now that we have identified methods for analyzing event impact, we will be able 
 </table>
 
 >**Note**: every team member participated actively in many data processing and analysis. We distributed the tasks evenly among ourselves.
+
+---
+
+## License
+
+This project is for educational purposes.  
+Content © Gianna Biino, Charlotte Daumal, Sandra Frey, Céline Hirsch & Elia Mounier-Poulat. Academic use only.
